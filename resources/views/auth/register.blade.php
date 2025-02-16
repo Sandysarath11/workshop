@@ -19,24 +19,43 @@
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
+            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         <!-- Confirm Password -->
         <div class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
+            <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <!-- Age -->
+        <div class="mt-4">
+            <x-input-label for="age" :value="__('Age')" />
+            <x-text-input id="age" class="block mt-1 w-full" type="number" name="age" :value="old('age')" required />
+            <x-input-error :messages="$errors->get('age')" class="mt-2" />
+        </div>
+
+        <!-- Class -->
+        <div class="mt-4">
+            <x-input-label for="class" :value="__('Class')" />
+            <x-text-input id="class" class="block mt-1 w-full" type="text" name="class" :value="old('class')" required />
+            <x-input-error :messages="$errors->get('class')" class="mt-2" />
+        </div>
+
+        <!-- Section -->
+        <div class="mt-4">
+            <x-input-label for="section" :value="__('Section')" />
+            <x-text-input id="section" class="block mt-1 w-full" type="text" name="section" :value="old('section')" required />
+            <x-input-error :messages="$errors->get('section')" class="mt-2" />
+        </div>
+
+        <!-- Contact -->
+        <div class="mt-4">
+            <x-input-label for="contact" :value="__('Contact')" />
+            <x-text-input id="contact" class="block mt-1 w-full" type="text" name="contact" :value="old('contact')" required />
+            <x-input-error :messages="$errors->get('contact')" class="mt-2" />
         </div>
 
         <div class="flex items-center justify-end mt-4">

@@ -42,8 +42,7 @@
           <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>
           <li><a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">About</a></li>
           <li><a href="{{ route('workshop') }}" class="{{ request()->routeIs('workshop') ? 'active' : '' }}">Workshops</a></li>
-          <li><a href="{{ route('student') }}" class="{{ request()->routeIs('student') ? 'active' : '' }}">students</a></li>
-          <li><a href="{{ route('login') }}" class="{{ request()->routeIs('login') ? 'active' : '' }}">SignIn</a></li>
+          <li><a href="{{ route('register') }}" class="{{ request()->routeIs('register') ? 'active' : '' }}">SignUp</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>

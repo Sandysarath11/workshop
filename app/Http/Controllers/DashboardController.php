@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\student; // Import the User model
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function about()
+    public function student()
     {
-        return view('about');
+        $data = student::all();
+        return view('student', ['data' => $data]);
     }
 }
